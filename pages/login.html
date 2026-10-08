@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | NovaWeb</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-container">
+
+        <!-- Left Side -->
+        <section class="auth-left">
+
+            <a href="../index.html" class="logo">
+                Nova<span>Web</span>
+            </a>
+
+            <div class="auth-left-content">
+
+                <span class="hero-badge">
+                    ✨ Welcome Back
+                </span>
+
+                <h1>
+                    Continue Your
+                    <span>Digital Journey.</span>
+                </h1>
+
+                <p>
+                    Login to access your account and continue
+                    where you left off.
+                </p>
+
+                <div class="auth-benefits">
+
+                    <div>
+                        <span>✓</span>
+                        <p>Secure account access</p>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <p>Access your dashboard</p>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <p>Manage your profile</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Right Side -->
+        <section class="auth-right">
+
+            <div class="auth-card">
+
+                <div class="auth-header">
+
+                    <h2>Welcome Back</h2>
+
+                    <p>
+                        Enter your details to login to your account.
+                    </p>
+
+                </div>
+
+
+                <!-- Login Message -->
+                <div class="form-message" id="loginMessage"></div>
+
+
+                <form id="loginForm" novalidate>
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                        >
+
+                        <small class="error-message"
+                               id="loginEmailError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <div class="label-row">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <a href="#" class="forgot-link">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="loginPassword"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                        <small class="error-message"
+                               id="loginPasswordError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Remember -->
+                    <div class="remember-row">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="btn btn-primary btn-full"
+                    >
+                        Login
+                    </button>
+
+                </form>
+
+
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+
+
+                <p class="auth-switch">
+
+                    Don't have an account?
+
+                    <a href="signup.html">
+                        Create Account
+                    </a>
+
+                </p>
+
+
+                <a href="../index.html"
+                   class="back-home">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Shared JavaScript -->
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
